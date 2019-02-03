@@ -54,6 +54,7 @@ namespace E763_Project
                         double Vinplace = 0;
                         double BearingSteel;
 
+
                         if (btitem==BeamType.B60)
                         {
                             double Lc = 0;
