@@ -1,0 +1,6 @@
+Type,Long.Dim(m),Trans.Dim(m),Height(m),Pile Dia.(m),Long. Rows,Trans. Columns,Long. Space of piles(m),Trans. Space of piles(m),Nos. of piles,Remarks,Volume(m3),Pile arrangement,Reinf. Content of pilecap(kg/m3),Reinf. Content of pile(kg/m3),Volume of Cushion(m3)
+Pc-1,1.80,12.80,1.5,1.2,1,4,3.6,3.6,4,0-5,35,4-1.2m,140,120,2.60
+Pc-2,3.60,7.20,1.8,1.2,2,3,3.6,3.6,6,5-16,47,6-1.2m,140,120,2.81
+Pc-3,5.40,5.40,2.5,1.8,2,2,5.4,5.4,4,16-23,73,4-1.8m,140,120,3.14
+Pc-4,6.00,6.00,3,2,2,2,6,6,4,23-27,108,4-2m,140,120,3.84
+Pc-5,6.60,6.60,3,2.2,2,2,6.6,6.6,4,23-27,131,4-2.2m,140,120,4.62
