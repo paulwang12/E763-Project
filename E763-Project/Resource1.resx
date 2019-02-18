@@ -118,65 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Foundation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Foundation.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  <data name="LK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LK.SQX;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="LKBOB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\LKBOB.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
-  <data name="LKDMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\LK.DMX;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LKSQX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\LK.SQX;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="LK_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\LK-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="LK_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\LK-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="R1_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R1-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="R1_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R1-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+    <value>Resources\LK-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
   <data name="R2_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R2-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="R2_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R2-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+    <value>Resources\R2-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
   <data name="R3_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R3-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="R3_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R3-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+    <value>Resources\R3-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
   <data name="R4_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R4-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+    <value>Resources\R4-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
-  <data name="R4_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R4-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  <data name="R5_1_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\R5-1-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
-  <data name="R5_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R5-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  <data name="R5_2_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\R5-2-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
-  <data name="R5_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R5-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  <data name="R5_3_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\R5-3-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
   <data name="R6_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R6-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+    <value>Resources\R6-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
   </data>
-  <data name="R6_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R6-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="R7_DMX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R7-DMX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
-  </data>
-  <data name="R7_SJX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bin\Debug\R7-SJX.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  <data name="RK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RK.SQX;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="RKBOB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\RKBOB.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>

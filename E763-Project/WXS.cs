@@ -48,6 +48,95 @@ namespace E763_Project
         }
 
 
+        public static int GetRightW2(string pk)
+        {
+            int i = pk.IndexOf('K');
+            string a = pk.Remove(i + 1);
+            pk = pk.Replace(a, "");
+            var ff = pk.Split('+');
+            double pks = double.Parse(ff[0]) * 1000 + double.Parse(ff[1]);
+            if (pks <= 164200)
+            {
+                if (((pks >= 151889) && (pks < 155701)) || ((pks >= 161245) && (pks < 163569)))
+                {
+                    return 1815;
+                }
+                else
+                {
+                    return 1465;
+                }
+            }
+            else if (pks <= 222300)
+            {
+                if (((pks >= 164722) && (pks < 166558)) || ((pks >= 171812) && (pks < 174400)) || ((pks >= 176545) && (pks < 179767)) || ((pks >= 187691) && (pks < 190246.869)) || ((pks >= 191520) && (pks < 193075)) || ((pks >= 195015) && (pks < 196035)) || ((pks >= 196720) && (pks < 199628)) || ((pks >= 200710) && (pks < 206017)) || ((pks >= 207838) && (pks < 217472)))
+                {
+                    return 1715;
+                }
+                else
+                {
+                    return 1365;
+                }
+            }
+            else
+            {
+                if (((pks >= 223516) && (pks < 225144)) || ((pks >= 226580) && (pks < 228052)) || ((pks >= 229615) && (pks < 231910)) || ((pks >= 234025) && (pks < 239482)) || ((pks >= 247966) && (pks < 252459)))
+                {
+                    return 1815;
+                }
+                else
+                {
+                    return 1465;
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// 方案2
+        /// </summary>
+        /// <param name="pk"></param>
+        /// <returns></returns>
+        public static int GetLeftW2(string pk)
+        {
+            int i = pk.IndexOf('K');
+            string a = pk.Remove(i + 1);
+            pk = pk.Replace(a, "");
+            var ff = pk.Split('+');
+            double pks = double.Parse(ff[0]) * 1000 + double.Parse(ff[1]);
+            if (pks <= 164200)
+            {
+                if (((pks >= 154621) && (pks < 156136)) || ((pks >= 162423) && (pks < 163671)))
+                {
+                    return 1815;
+                }
+                else
+                {
+                    return 1465;
+                }
+            }
+            else if (pks <= 222300)
+            {
+                if (((pks >= 179000) && (pks < 182320))|| ((pks >= 218396) && (pks < 221001)))
+                {
+                    return 1715;
+                }
+                else
+                {
+                    return 1365;
+                }
+            }
+            else
+            {
+                if (((pks >= 224071) && (pks < 225571)) || ((pks >= 226983) && (pks < 228408)) || ((pks >= 238381) && (pks < 240602)))
+                {
+                    return 1815;
+                }
+                else
+                {
+                    return 1465;
+                }
+            }
+        }
 
         public static int GetLeftW(string pk)
         {
@@ -131,11 +220,6 @@ namespace E763_Project
                     return 1465;
                 }
             }
-
-
-
-
-
         }
 
 

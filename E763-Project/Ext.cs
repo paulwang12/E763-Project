@@ -530,8 +530,8 @@ namespace E763_Project
                 double pks = PK2NUM(wd);
 
                 List<int> sps = new List<int>();
-                sps.Add(WXS.GetLeftW(wd));
-                sps.Add(WXS.GetRightW(wd));
+                sps.Add(WXS.GetLeftW2(wd));
+                sps.Add(WXS.GetRightW2(wd));
                 BOB.Rows[i]["Width"] = sps;
             }
 
@@ -594,6 +594,46 @@ namespace E763_Project
             }
 
         }
+
+
+
+
+
+
+
+        public static void AddSJXBG(ref DataTable BOB, string ColName, ref SQX sqx)
+        {
+            BOB.Columns.Add(ColName, typeof(List<double>));
+            for (int i = 0; i < BOB.Rows.Count; i++)
+            {
+                List<int> splist = (List<int>)BOB.Rows[i]["NPTS"];
+                List<BeamType> btlist = (List<BeamType>)BOB.Rows[i]["BeamTypes"];
+                double Length = double.Parse((string)BOB.Rows[i]["L"]);
+                double pks = PK2NUM((string)BOB.Rows[i]["PK"]);
+                double pk0 = pks - 0.5 * Length;
+                List<double> dmbg = new List<double>();
+                for (int j = 0; j <= splist.Count; j++)
+                {
+                    dmbg.Add(sqx.GetBG(pk0));
+                    if (j != splist.Count)
+                    {
+                        pk0 += splist[j];
+                    }
+                }
+                BOB.Rows[i][ColName] = dmbg;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
         public static void AddBG(ref DataTable BOB,string ColName,ref List<Tuple<double,double>> BGLine)
         {
             BOB.Columns.Add(ColName, typeof(List<double>));

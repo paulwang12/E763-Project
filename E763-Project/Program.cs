@@ -41,28 +41,23 @@ namespace E763_Project
             DataTable LKBOB = Ext.GetDT(Resource1.LKBOB);
             DataTable RKBOB = Ext.GetDT(Resource1.RKBOB);
             List<Tuple<double, double>> LKDMX = Ext.GetBG(Resource1.LK_DMX);
-            List<Tuple<double, double>> LKSJX = Ext.GetBG(Resource1.LK_SJX);
-            List<Tuple<double, double>> RKDMX = Ext.GetBG(Resource1.R1_DMX);
-            List<Tuple<double, double>> RKSJX = Ext.GetBG(Resource1.R1_SJX);
-            RKDMX.AddRange(Ext.GetBG(Resource1.R2_DMX));
-            RKSJX.AddRange(Ext.GetBG(Resource1.R2_SJX));
-            RKDMX.AddRange(Ext.GetBG(Resource1.R3_DMX));
-            RKSJX.AddRange(Ext.GetBG(Resource1.R3_SJX));
-            RKDMX.AddRange(Ext.GetBG(Resource1.R4_DMX));
-            RKSJX.AddRange(Ext.GetBG(Resource1.R4_SJX));
-            RKDMX.AddRange(Ext.GetBG(Resource1.R5_DMX));
-            RKSJX.AddRange(Ext.GetBG(Resource1.R5_SJX));
+            List<Tuple<double, double>> RKDMX = Ext.GetBG(Resource1.R2_DMX);
+            RKDMX.AddRange(Ext.GetBG(Resource1.R3_DMX));            
+            RKDMX.AddRange(Ext.GetBG(Resource1.R4_DMX));            
+            RKDMX.AddRange(Ext.GetBG(Resource1.R5_1_DMX));
+            RKDMX.AddRange(Ext.GetBG(Resource1.R5_2_DMX));
+            RKDMX.AddRange(Ext.GetBG(Resource1.R5_3_DMX));
             RKDMX.AddRange(Ext.GetBG(Resource1.R6_DMX));
-            RKSJX.AddRange(Ext.GetBG(Resource1.R6_SJX));
-            RKDMX.AddRange(Ext.GetBG(Resource1.R7_DMX));
-            RKSJX.AddRange(Ext.GetBG(Resource1.R7_SJX));
+            SQX LK = new SQX("LK", Resource1.LK);
+            SQX RK = new SQX("RK", Resource1.RK);
+
 
 
             Ext.AddNPTS(ref LKBOB);
             Ext.AddWidth(ref LKBOB);
             Ext.AddBeamType(ref LKBOB);
             Ext.AddBG(ref LKBOB, "DMX", ref LKDMX);
-            Ext.AddBG(ref LKBOB, "SJX", ref LKSJX);
+            Ext.AddSJXBG(ref LKBOB, "SJX", ref LK);
             Ext.AddGroupNum(ref LKBOB);
             Ext.AddGroupType(ref LKBOB);
 
@@ -70,34 +65,34 @@ namespace E763_Project
             Ext.AddWidth(ref RKBOB);
             Ext.AddBeamType(ref RKBOB);
             Ext.AddBG(ref RKBOB, "DMX", ref RKDMX);
-            Ext.AddBG(ref RKBOB, "SJX", ref RKSJX);
+            Ext.AddSJXBG(ref RKBOB, "SJX", ref RK);
             Ext.AddGroupNum(ref RKBOB);
             Ext.AddGroupType(ref RKBOB);
 
             //LKBOB.DataTableToCSV("左线桥梁");
             //RKBOB.DataTableToCSV("右线桥梁");
-            LKBOB.DataTableToExcel("左线桥梁", "1");
-            RKBOB.DataTableToExcel("右线桥梁", "1");
+            //LKBOB.DataTableToExcel("左线桥梁", "1");
+            //RKBOB.DataTableToExcel("右线桥梁", "1");
 
 
             //--------------------------------------------------------------------------------------
             //输出清单记录
             //--------------------------------------------------------------------------------------
-            //OutPut.SubStructure(ref AllRcd, ref LKBOB);
-            //OutPut.SupStructure(ref AllRcd, ref LKBOB);
-            //OutPut.Auxiliary(ref AllRcd, ref LKBOB);
+            OutPut.SubStructure(ref AllRcd, ref LKBOB);
+            OutPut.SupStructure(ref AllRcd, ref LKBOB);
+            OutPut.Auxiliary(ref AllRcd, ref LKBOB);
 
-            //OutPut.SubStructure(ref AllRcd, ref RKBOB);
-            //OutPut.SupStructure(ref AllRcd, ref RKBOB);
-            //OutPut.Auxiliary(ref AllRcd, ref RKBOB);
+            OutPut.SubStructure(ref AllRcd, ref RKBOB);
+            OutPut.SupStructure(ref AllRcd, ref RKBOB);
+            OutPut.Auxiliary(ref AllRcd, ref RKBOB);
             //--------------------------------------------------------------------------------------
             // 匹配桥梁信息
             //--------------------------------------------------------------------------------------
 
-            //AllRcd.AddInfo(ref LKBOB, ref RKBOB);
+            AllRcd.AddInfo(ref LKBOB, ref RKBOB);
 
 
-            //AllRcd.DataTableToCSV("材料清单表");
+            AllRcd.DataTableToCSV("材料清单表");
             //AllRcd.DataTableToExcel("材料清单", "左线");
 
 

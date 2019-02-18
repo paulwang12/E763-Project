@@ -100,13 +100,18 @@
     <None Include="bin\Debug\R6-SJX.csv" />
     <None Include="bin\Debug\R7-DMX.csv" />
     <None Include="bin\Debug\R7-SJX.csv" />
-    <None Include="Resources\Foundation.csv" />
-    <None Include="Resources\LK.DMX" />
+    <None Include="Resources\LK-DMX.csv" />
     <None Include="Resources\LK.SQX" />
     <None Include="Resources\LKBOB.csv" />
+    <None Include="Resources\R2-DMX.csv" />
+    <None Include="Resources\R3-DMX.csv" />
+    <None Include="Resources\R4-DMX.csv" />
+    <None Include="Resources\R5-1-DMX.csv" />
+    <None Include="Resources\R5-2-DMX.csv" />
+    <None Include="Resources\R5-3-DMX.csv" />
+    <None Include="Resources\R6-DMX.csv" />
+    <None Include="Resources\RK.SQX" />
     <None Include="Resources\RKBOB.csv" />
-    <None Include="Resources\建-L-全.DMX" />
-    <None Include="Resources\建-L-全.SQX" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AutoCAD">
