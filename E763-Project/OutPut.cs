@@ -82,7 +82,7 @@ namespace E763_Project
                             {
                                 Ac = 0;
                             }
-                            Vc = Ac * (35 + 60 + 35);
+                            Vc = Ac * (35 + 60 + 35)*1.05;
                             Rebar = Vc * 190;
                             PreRebar = Vc * 50;
                             
@@ -97,24 +97,24 @@ namespace E763_Project
                             double Lc = 0;
                             if (BridgeWI == 1365)
                             {
-                                Ac = 9.6604;
+                                Ac = 9.0413;
                                 Lc = 18.3;
 
                             }
                             else if (BridgeWI == 1465)
                             {
-                                Ac = 10.0549;
+                                Ac = 9.5214;
                                 Lc =19.3;
 
                             }
                             else if (BridgeWI == 1715)
                             {
-                                Ac = 11.4707;
+                                Ac = 10.849;
                                 Lc = 22.2;
                             }
                             else if (BridgeWI == 1815)
                             {
-                                Ac = 11.8;
+                                Ac = 11.2455;
                                 Lc = 23.1;
                             }
                             else
@@ -122,7 +122,7 @@ namespace E763_Project
                                 Ac = 0;
                                 Lc = 0;
                             }
-                            Vc = Ac *50;
+                            Vc = Ac *50*1.1;
                             Rebar = Vc * 190;
                             PreRebar = Vc * 40;
 
